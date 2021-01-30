@@ -2,15 +2,8 @@
 @import "../bootstrap/scss/bootstrap";
 @import "nav";
 @import "home";
-
-@font-face {
-  font-family: 'jiggler';
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url("../assets/fonts/budmo\ jiggler.ttf"),
-    url("../assets/fonts/budmo\ jigglish.ttf");
-}
+@import "recommend";
+@import "fonts";
 
 html,
 body {

@@ -1,0 +1,38 @@
+.recommend {
+  width: 100%;
+  height: 100vh;
+  background-color: #F7CE25;
+}
+
+#special-sand-image {
+  height: 100vh;
+  background: url(../assets/images/special-sand.svg) center/cover;
+}
+
+.recommend-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommend-header {
+  flex: 8;
+}
+
+.recommend-header h1 {
+  font-weight: 400;
+  color: #F7CE25;
+  background-color: rgb(80, 75, 75);
+  font-size: 10rem;
+  font-family: jigglish;
+  letter-spacing: 1rem;
+}
+
+.recommend-detail {
+  flex: auto;
+}
+
+.recommend-description {
+  flex: auto;
+}
