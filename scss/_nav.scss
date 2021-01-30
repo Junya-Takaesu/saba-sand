@@ -29,6 +29,10 @@ $header-text-color: #d7d7d7;
   padding-left: 3rem;
 }
 
+.nav div.logo a:hover {
+  color: #e6e200;
+}
+
 .nav div.logo a {
   text-decoration: none;
   color: $header-text-color;
@@ -81,7 +85,7 @@ $header-text-color: #d7d7d7;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+    color: #e6e200;
 }
 
 
