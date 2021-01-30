@@ -10637,10 +10637,34 @@ textarea.form-control-lg {
 .nav div.logo {
   float: left;
   width: 100px;
-  height: 100%;
   padding-left: 3rem;
-  background: url("../assets/images/logo.svg") no-repeat;
-  background-size: cover;
+}
+
+.nav div.logo a {
+  text-decoration: none;
+  color: #d7d7d7;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.nav div.logo a::before {
+  display: block;
+  border-bottom: solid 8px #d7d7d7;
+  content: "";
+  width: 172px;
+  margin-bottom: -23%;
+}
+
+.nav div.logo a::after {
+  display: block;
+  border-bottom: solid 8px #d7d7d7;
+  content: "";
+  width: 172px;
+  margin-top: -41%;
+}
+
+#logo-dot {
+  font-size: 10px;
 }
 
 .nav div.main_list {
@@ -10694,6 +10718,33 @@ textarea.form-control-lg {
 
   .nav div.logo {
     margin-left: 15px;
+  }
+
+  .nav div.logo a {
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .nav div.logo a::before {
+    display: block;
+    border-bottom: solid 5px #d7d7d7;
+    content: "";
+    width: 90px;
+    margin-bottom: -33%;
+  }
+
+  .nav div.logo a::after {
+    display: block;
+    border-bottom: solid 5px #d7d7d7;
+    content: "";
+    width: 90px;
+    margin-top: -44%;
+  }
+
+  #logo-dot {
+    font-size: 1px;
   }
 
   .nav div.main_list {
