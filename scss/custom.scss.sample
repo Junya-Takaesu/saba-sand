@@ -1,0 +1,38 @@
+$body-bg: black;
+$primary: #0074d9;
+$danger: #8cbd1a;
+
+
+// この import ですべての bootstrap の sass を取り込む
+@import "../bootstrap/scss/bootstrap";
+
+$custom-colors: (
+  "custom-color": rgb(219, 219, 77)
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@font-face {
+  font-family: 'custom-font';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../assets/fonts/budmo\ jiggler.ttf"),
+    url("../assets/fonts/budmo\ jigglish.ttf");
+}
+
+body {
+  background-color: $body-bg;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+h1 {
+  color: map-get($map: $theme-colors, $key: "custom-color");
+  font-family: 'custom-font', san-serif;
+}
