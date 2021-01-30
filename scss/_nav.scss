@@ -16,25 +16,19 @@
 }
 
 .nav div.logo {
-    float: left;
-    width: auto;
-    height: auto;
-    padding-left: 3rem;
-}
-
-.nav div.logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.5rem;
-}
-
-.nav div.logo a:hover {
-    color: #00E676;
+  float: left;
+  width: 100px;
+  height: 100%;
+  padding-left: 3rem;
+  background: url("../assets/images/logo.svg") no-repeat;
+  background-size: cover;
 }
 
 .nav div.main_list {
     height: 65px;
     float: right;
+    font-family: "jiggler", sans-serif;
+    letter-spacing: 0.5rem;
 }
 
 .nav div.main_list ul {
@@ -55,7 +49,7 @@
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #d7d7d7;
     line-height: 65px;
     font-size: 2.4rem;
 }
