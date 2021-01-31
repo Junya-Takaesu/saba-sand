@@ -11012,13 +11012,13 @@ textarea.form-control-lg {
 }
 .recommend {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background-color: #F7CE25;
   box-shadow: inset 0 0 700px #464509;
 }
 
 #special-sand-image {
-  height: 100vh;
+  height: 70vh;
   background: url(../assets/images/special-sand.svg) center/cover;
 }
 
