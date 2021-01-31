@@ -1,11 +1,14 @@
+$recommend-height: 100vh;
+
 .recommend {
   width: 100%;
-  height: 100vh;
+  height: $recommend-height;
   background-color: #F7CE25;
+  box-shadow: inset 0 0 700px rgb(70, 69, 9);
 }
 
 #special-sand-image {
-  height: 100vh;
+  height: $recommend-height;
   background: url(../assets/images/special-sand.svg) center/cover;
 }
 
