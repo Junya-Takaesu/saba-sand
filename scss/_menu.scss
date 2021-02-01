@@ -1,0 +1,43 @@
+$menu-height: 100vh;
+$menu-image: "../assets/images/special-sand.svg";
+
+.menu {
+  background-color: #291715;
+  box-shadow: inset 0 0 800px rgb(0, 0, 0);
+  color: bisque;
+
+  .menu-header {
+    width: 500px;
+    font-weight: 400;
+    color: bisque;
+    background-color: rgb(80, 75, 75);
+    font-size: 10rem;
+    font-family: Ewert-Regular;
+    letter-spacing: 1rem;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 0 black;
+  }
+
+  .sand-image {
+    width: auto;
+    height: 25vh;
+    background: url($menu-image) center/cover;
+    z-index: 0;
+  }
+
+  .menu-name-en {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 5px 5px 1px black;
+  }
+
+  .menu-name-jp {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+}

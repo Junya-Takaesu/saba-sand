@@ -11101,6 +11101,42 @@ textarea.form-control-lg {
   font-weight: normal;
   src: url("../assets/fonts/Ewert-Regular.ttf");
 }
+.menu {
+  background-color: #291715;
+  box-shadow: inset 0 0 800px black;
+  color: bisque;
+}
+.menu .menu-header {
+  width: 500px;
+  font-weight: 400;
+  color: bisque;
+  background-color: #504b4b;
+  font-size: 10rem;
+  font-family: Ewert-Regular;
+  letter-spacing: 1rem;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 0 black;
+}
+.menu .sand-image {
+  width: auto;
+  height: 25vh;
+  background: url("../assets/images/special-sand.svg") center/cover;
+  z-index: 0;
+}
+.menu .menu-name-en {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 1px black;
+}
+.menu .menu-name-jp {
+  font-size: 1.5rem;
+}
+.menu .price {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+
 html,
 body {
   margin: 0;
@@ -11109,3 +11145,5 @@ body {
   font-size: 62.5%;
   font-size: 10px;
 }
+
+/*# sourceMappingURL=style.css.map */
