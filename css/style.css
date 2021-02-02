@@ -10642,6 +10642,7 @@ textarea.form-control-lg {
 
 .nav div.logo a:hover {
   color: #e6e200;
+  text-shadow: 0 0 10px;
 }
 
 .nav div.logo a {
@@ -10652,23 +10653,29 @@ textarea.form-control-lg {
 }
 
 .nav div.logo a::before {
-  display: block;
-  border-bottom: solid 8px #d7d7d7;
   content: "";
-  width: 172px;
+  display: block;
+  height: 8px;
+  width: 178px;
+  background: linear-gradient(to right, #a7ff2c 1%, #b1bf1f 100%);
+  box-shadow: 0 0 10px whitesmoke;
+  border-radius: 10px;
   margin-bottom: -23%;
 }
 
 .nav div.logo a::after {
-  display: block;
-  border-bottom: solid 8px #d7d7d7;
   content: "";
-  width: 172px;
+  display: block;
+  height: 8px;
+  width: 178px;
+  background: linear-gradient(to right, #a7ff2c 1%, #b1bf1f 100%);
+  box-shadow: 0 0 10px whitesmoke;
+  border-radius: 10px;
   margin-top: -41%;
 }
 
 #logo-dot {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .nav div.main_list {
@@ -10703,6 +10710,7 @@ textarea.form-control-lg {
 
 .nav div.main_list ul li a:hover {
   color: #e6e200;
+  text-shadow: 0 0 10px;
 }
 
 /* Media qurey section */
@@ -10720,10 +10728,6 @@ textarea.form-control-lg {
     display: block;
   }
 
-  .nav div.logo {
-    margin-left: 15px;
-  }
-
   .nav div.logo a {
     text-decoration: none;
     color: #d7d7d7;
@@ -10732,23 +10736,29 @@ textarea.form-control-lg {
   }
 
   .nav div.logo a::before {
-    display: block;
-    border-bottom: solid 5px #d7d7d7;
     content: "";
+    display: block;
+    height: 8px;
     width: 90px;
+    background: linear-gradient(to right, #a7ff2c 1%, #b1bf1f 100%);
+    box-shadow: 0 0 10px whitesmoke;
+    border-radius: 10px;
     margin-bottom: -33%;
   }
 
   .nav div.logo a::after {
-    display: block;
-    border-bottom: solid 5px #d7d7d7;
     content: "";
+    display: block;
+    height: 8px;
     width: 90px;
+    background: linear-gradient(to right, #a7ff2c 1%, #b1bf1f 100%);
+    box-shadow: 0 0 10px whitesmoke;
+    border-radius: 10px;
     margin-top: -44%;
   }
 
   #logo-dot {
-    font-size: 1px;
+    font-size: 10px;
   }
 
   .nav div.main_list {
@@ -10837,16 +10847,19 @@ textarea.form-control-lg {
 .navTrigger.active i:nth-child(1) {
   -webkit-animation: inT 0.8s forwards;
   animation: inT 0.8s forwards;
+  box-shadow: 0 0 10px white;
 }
 
 .navTrigger.active i:nth-child(2) {
   -webkit-animation: inM 0.8s forwards;
   animation: inM 0.8s forwards;
+  box-shadow: 0 0 10px white;
 }
 
 .navTrigger.active i:nth-child(3) {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
+  box-shadow: 0 0 10px white;
 }
 
 @-webkit-keyframes inM {
@@ -10970,10 +10983,15 @@ textarea.form-control-lg {
   }
 }
 .affix {
-  padding: 16px 0 0;
+  padding: 5px 0 0;
   background-color: #111;
 }
 
+@media screen and (max-width: 768px) {
+  .affix {
+    padding: 18px 0 0;
+  }
+}
 .myH2 {
   text-align: center;
   font-size: 4rem;
