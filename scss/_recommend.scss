@@ -28,6 +28,16 @@ $recommend-image: "../assets/images/special-sand.svg";
   box-shadow: 10px 10px 0 black;
 }
 
+@media screen and (max-width:768px) {
+  .recommend-header {
+    width: 23rem;
+    font-size: 3rem;
+    padding: 0 1.2rem;
+    margin: 0 auto;
+    box-shadow: (10px / 2) (10px /2) 0 black;
+  }
+}
+
 .recommend-name-en {
   font-size: 6rem;
   font-family: jigglish;

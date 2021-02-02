@@ -4,11 +4,14 @@
 
 $header-text-color: #d7d7d7;
 
-@mixin logo-border($width: 172px, $height: 8px) {
-  display: block;
-  border-bottom: solid $height $header-text-color;
+@mixin logo-border($width: 178px, $height: 8px) {
   content: "";
+  display: block;
+  height: 8px;
   width: $width;
+  background: linear-gradient(to right, #a7ff2c 1%, #b1bf1f 100%);
+  box-shadow: 0 0 10px whitesmoke;
+  border-radius: 10px;
 }
 
 .nav {
@@ -31,6 +34,7 @@ $header-text-color: #d7d7d7;
 
 .nav div.logo a:hover {
   color: #e6e200;
+  text-shadow: 0 0 10px;
 }
 
 .nav div.logo a {
@@ -51,7 +55,7 @@ $header-text-color: #d7d7d7;
 }
 
 #logo-dot {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .nav div.main_list {
@@ -86,6 +90,7 @@ $header-text-color: #d7d7d7;
 
 .nav div.main_list ul li a:hover {
   color: #e6e200;
+  text-shadow: 0 0 10px;
 }
 
 
@@ -109,7 +114,7 @@ $header-text-color: #d7d7d7;
       display: block;
   }
   .nav div.logo {
-      margin-left: 15px;
+      // margin-left: 15px;
   }
   .nav div.logo a {
     text-decoration: none;
@@ -126,7 +131,7 @@ $header-text-color: #d7d7d7;
     margin-top: -44%;
   }
   #logo-dot {
-    font-size: 1px;
+    font-size: 10px;
   }
   .nav div.main_list {
     width: 100%;
@@ -212,16 +217,19 @@ $header-text-color: #d7d7d7;
 .navTrigger.active i:nth-child(1) {
   -webkit-animation: inT 0.8s forwards;
   animation: inT 0.8s forwards;
+  box-shadow: 0 0 10px white;
 }
 
 .navTrigger.active i:nth-child(2) {
   -webkit-animation: inM 0.8s forwards;
   animation: inM 0.8s forwards;
+  box-shadow: 0 0 10px white;
 }
 
 .navTrigger.active i:nth-child(3) {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
+  box-shadow: 0 0 10px white;
 }
 
 @-webkit-keyframes inM {
@@ -357,9 +365,16 @@ $header-text-color: #d7d7d7;
 }
 
 .affix {
-  padding: 16px 0 0;
+  padding: 5px 0 0;
   background-color: #111;
 }
+
+@media screen and (max-width:768px) {
+  .affix {
+    padding: 18px 0 0;
+  }
+}
+
 
 
 
