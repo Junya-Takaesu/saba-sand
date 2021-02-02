@@ -19,6 +19,15 @@ $menu-image: "../assets/images/special-sand.svg";
     box-shadow: 10px 10px 0 black;
   }
 
+  @media screen and (max-width:768px) {
+    .menu-header {
+      width: 3rem * 5;
+      font-size: 3rem;
+      padding: 0 1.2rem;
+      box-shadow: (10px / 2) (10px /2) 0 black;
+    }
+  }
+
   .sand-image {
     width: auto;
     height: 25vh;

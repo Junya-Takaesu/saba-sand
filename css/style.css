@@ -11118,6 +11118,14 @@ textarea.form-control-lg {
   margin: 0 auto;
   box-shadow: 10px 10px 0 black;
 }
+@media screen and (max-width: 768px) {
+  .menu .menu-header {
+    width: 15rem;
+    font-size: 3rem;
+    padding: 0 1.2rem;
+    box-shadow: 5px 5px 0 black;
+  }
+}
 .menu .sand-image {
   width: auto;
   height: 25vh;
