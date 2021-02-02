@@ -13,19 +13,21 @@ $recommend-image: "../assets/images/special-sand.svg";
 }
 
 #special-sand-image {
-  height: $recommend-height;
+  height: 45vh;
   background: url($recommend-image) center/cover;
 }
 
 .recommend-header {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgb(80, 75, 75);
+  box-shadow: 10px 10px 0 black;
   font-weight: 400;
   color: #F7CE25;
-  background-color: rgb(80, 75, 75);
   font-size: 10rem;
   font-family: Ewert-Regular;
   letter-spacing: 1rem;
   padding: 0 50px;
-  box-shadow: 10px 10px 0 black;
 }
 
 @media screen and (max-width:768px) {
@@ -39,17 +41,17 @@ $recommend-image: "../assets/images/special-sand.svg";
 }
 
 .recommend-name-en {
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-family: jigglish;
 }
 
 .recommend-name-jp {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .price {
-  font-size: 7rem;
+  font-size: 4rem;
   font-weight: 900;
   letter-spacing: 1rem;
 }
