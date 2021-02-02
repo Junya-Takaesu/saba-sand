@@ -1,0 +1,28 @@
+.scroll-top {
+  height: 60px;
+  width: 60px;
+  background: linear-gradient(to right bottom, rgba(255,255,255,1), rgba(255,255,255,0.3));
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.336);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.9);
+  transition: .3s ease-in-out transform;
+
+  &:hover {
+    transform: scale(1);
+    background: #e6e200;
+    text-shadow: 0 0 10px;
+  }
+
+  svg {
+    width: 50%;
+    color: black;
+    pointer-events: none ;
+  }
+}
