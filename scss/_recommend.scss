@@ -53,6 +53,7 @@ $recommend-image: "../assets/images/special-sand.svg";
 /* sp mode */
 .recommend-sp {
   @include recommend-base;
+  height: 90vh;
   .recommend-name-en {
     font-size: 3rem;
     font-family: sans-serif;

@@ -11060,6 +11060,7 @@ textarea.form-control-lg {
   height: 70vh;
   background-color: #F7CE25;
   box-shadow: inset 0 0 100px 30px #464509;
+  height: 90vh;
 }
 .recommend-sp .recommend-name-en {
   font-size: 3rem;
