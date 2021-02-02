@@ -11036,19 +11036,21 @@ textarea.form-control-lg {
 }
 
 #special-sand-image {
-  height: 70vh;
+  height: 45vh;
   background: url("../assets/images/special-sand.svg") center/cover;
 }
 
 .recommend-header {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #504b4b;
+  box-shadow: 10px 10px 0 black;
   font-weight: 400;
   color: #F7CE25;
-  background-color: #504b4b;
   font-size: 10rem;
   font-family: Ewert-Regular;
   letter-spacing: 1rem;
   padding: 0 50px;
-  box-shadow: 10px 10px 0 black;
 }
 
 @media screen and (max-width: 768px) {
@@ -11061,17 +11063,17 @@ textarea.form-control-lg {
   }
 }
 .recommend-name-en {
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-family: jigglish;
 }
 
 .recommend-name-jp {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .price {
-  font-size: 7rem;
+  font-size: 4rem;
   font-weight: 900;
   letter-spacing: 1rem;
 }
@@ -11171,6 +11173,59 @@ textarea.form-control-lg {
 .menu .price {
   font-size: 1.5rem;
   letter-spacing: 0.3rem;
+}
+
+#sns {
+  background-color: black;
+}
+#sns .sns-header {
+  width: 500px;
+  font-weight: 400;
+  color: bisque;
+  background-color: #504b4b;
+  font-size: 10rem;
+  font-family: Ewert-Regular;
+  letter-spacing: 1rem;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 0 black;
+}
+#sns .sns-message {
+  font-size: 6rem;
+  color: bisque;
+  text-shadow: 5px 5px 1px #504b4b;
+}
+#sns .sns-body {
+  background: blanchedalmond;
+  border-radius: 10px;
+}
+#sns .sns-body h1, #sns .sns-body .h1 {
+  font-size: 4rem;
+}
+#sns .sns-body p {
+  font-size: 2rem;
+}
+#sns .sns-body .marker {
+  background-color: black;
+  padding: 2px;
+  margin: 0 2px;
+  border-radius: 10px;
+  color: bisque;
+  box-shadow: 3px 3px 1px #504b4b;
+}
+@media screen and (max-width: 768px) {
+  #sns .sns-header {
+    width: 15rem;
+    font-size: 3rem;
+    padding: 0 1.2rem;
+    box-shadow: 5px 5px 0 black;
+  }
+  #sns .sns-body h1, #sns .sns-body .h1 {
+    font-size: 2.5rem;
+  }
+  #sns .sns-body p {
+    font-size: 1.7rem;
+  }
 }
 
 html,
