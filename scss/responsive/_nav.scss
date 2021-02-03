@@ -1,0 +1,130 @@
+$s-logo-border-length: 90px;
+$s-logo-border-heigth: 5px;
+
+.nav {
+  .nav-trigger {
+    display: block;
+  }
+
+  div {
+    &.logo {
+      a {
+        text-decoration: none;
+        color: $text-white;
+        font-size: 3rem;
+        font-weight: bold;
+
+        &::before {
+          @include logo-border($s-logo-border-length, $s-logo-border-heigth);
+          margin-bottom: -33%;
+        }
+        &::after {
+          @include logo-border($s-logo-border-length, $s-logo-border-heigth);
+          margin-top: -44%;
+        }
+      }
+
+      #dot {
+        font-size: 8px;
+      }
+    }
+
+    &.main-list {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $nav-background-color;
+        background-position: center top;
+
+        li {
+          width: 100%;
+          text-align: right;
+
+          a {
+            text-align: center;
+            width: 100%;
+            font-size: 3rem;
+            padding: 20px;
+          }
+        }
+      }
+    }
+
+    &.show_list {
+      height: auto;
+      display: none;
+    }
+
+    &.media_button {
+      display: block;
+    }
+  }
+}
+
+.affix {
+  padding: 18px 0 0;
+}
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.nav-trigger {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin: auto;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+
+  i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    &:nth-child(1) {
+      animation: outT 0.8s backwards;
+      animation-direction: reverse;
+    }
+
+    &:nth-child(2) {
+      margin: 5px 0;
+      animation: outM 0.8s backwards;
+      animation-direction: reverse;
+    }
+
+    &:nth-child(3) {
+      animation: outBtm 0.8s backwards;
+      animation-direction: reverse;
+    }
+  }
+
+  &.active {
+    i {
+      &:nth-child(1) {
+        animation: inT 0.8s forwards;
+        box-shadow: 0 0 10px white;
+      }
+      &:nth-child(2) {
+        animation: inM 0.8s forwards;
+        box-shadow: 0 0 10px white;
+      }
+      &:nth-child(3) {
+        animation: inBtm 0.8s forwards;
+        box-shadow: 0 0 10px white;
+      }
+    }
+  }
+}
