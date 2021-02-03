@@ -1,0 +1,37 @@
+#sns {
+  background-color: black;
+
+  .sns-message {
+    font-size: 6rem;
+    color: rgb(175, 167, 157);
+    text-shadow: 5px 5px 1px #504b4b;
+    display: inline-block;
+
+    span {
+      @include neon-text;
+      margin-left: 2.7rem;
+      display: inline-block;
+      font-size: 5rem;
+      transform: rotate(90deg);
+    }
+  }
+  .sns-card {
+    background: blanchedalmond;
+    border-radius: 10px;
+    h1 {
+      font-size: 2.8rem;
+      border-bottom: double black 10px;
+    }
+    p {
+      font-size: 2rem;
+    }
+    .marker {
+      background-color: black;
+      padding: 2px;
+      margin: 0 2px;
+      border-radius: 10px;
+      color: bisque;
+      box-shadow: 3px 3px 1px #504b4b;
+    }
+  }
+}

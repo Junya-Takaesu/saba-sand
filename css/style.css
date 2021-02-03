@@ -10857,7 +10857,7 @@ body {
 
 #menu {
   background-color: #291715;
-  box-shadow: inset 0 0 100px 30px black;
+  box-shadow: inset 0 0 100px 30px black, inset 0 -10px 30px 30px black;
   color: bisque;
 }
 #menu .sand-image {
@@ -10875,6 +10875,43 @@ body {
 }
 #menu .price {
   font-size: 1.7rem;
+}
+
+#sns {
+  background-color: black;
+}
+#sns .sns-message {
+  font-size: 6rem;
+  color: #afa79d;
+  text-shadow: 5px 5px 1px #504b4b;
+  display: inline-block;
+}
+#sns .sns-message span {
+  color: yellow;
+  text-shadow: 0 0 10px white;
+  margin-left: 2.7rem;
+  display: inline-block;
+  font-size: 5rem;
+  transform: rotate(90deg);
+}
+#sns .sns-card {
+  background: blanchedalmond;
+  border-radius: 10px;
+}
+#sns .sns-card h1, #sns .sns-card .h1 {
+  font-size: 2.8rem;
+  border-bottom: double black 10px;
+}
+#sns .sns-card p {
+  font-size: 2rem;
+}
+#sns .sns-card .marker {
+  background-color: black;
+  padding: 2px;
+  margin: 0 2px;
+  border-radius: 10px;
+  color: bisque;
+  box-shadow: 3px 3px 1px #504b4b;
 }
 
 .scroll-top {
@@ -11044,6 +11081,18 @@ body {
   }
   #recommend .description {
     font-size: 1.6rem;
+  }
+
+  #sns .sns-message {
+    font-size: 3rem;
+  }
+  #sns .sns-card h1, #sns .sns-card .h1 {
+    font-size: 2rem;
+    border-bottom: double black 5px;
+  }
+  #sns .sns-card p {
+    font-size: 1.7rem;
+    line-height: 3.1rem;
   }
 }
 
