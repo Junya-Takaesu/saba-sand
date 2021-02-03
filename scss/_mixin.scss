@@ -1,0 +1,14 @@
+@mixin logo-border($width: 178px, $height: 8px) {
+  content: "";
+  display: block;
+  height: 8px;
+  width: $width;
+  background: linear-gradient(to right, #a7ff2c 1%, #b1bf1f 100%);
+  box-shadow: 0 0 10px whitesmoke;
+  border-radius: 10px;
+}
+
+@mixin neon-text {
+  color: yellow;
+  text-shadow: 0 0 10px white;
+}

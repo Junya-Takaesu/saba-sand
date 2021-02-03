@@ -10628,6 +10628,19 @@ body {
   font-size: 10px;
 }
 
+.section-header {
+  width: fit-content;
+  font-weight: 400;
+  color: bisque;
+  background-color: #504b4b;
+  font-size: 6rem;
+  font-family: Ewert-Regular;
+  letter-spacing: 1rem;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 0 black;
+}
+
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 /* Navbar section */
@@ -10785,6 +10798,45 @@ body {
   background: url(../assets/images/home-bg.svg) no-repeat center/cover;
 }
 
+#recommend {
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #bd5f13, rgba(241, 227, 24, 0.4));
+  box-shadow: inset 0 0 100px 30px #464509;
+}
+#recommend #sand-image {
+  height: 45vh;
+  background: url(../assets/images/special-sand.svg) center/cover;
+  box-shadow: 0px 3px 10px #7e8605;
+}
+#recommend .neon {
+  margin: 20px 0 20px -1000px;
+  width: 10000px;
+  height: 3vh;
+  background: linear-gradient(to bottom, rgba(247, 12, 12, 0.9), rgba(163, 4, 4, 0.87));
+  box-shadow: 0 0px 50px 10px rgba(194, 0, 0, 0.9);
+}
+#recommend .name-en {
+  color: yellow;
+  text-shadow: 0 0 10px white;
+  font-size: 4.5rem;
+  font-family: jigglish;
+}
+#recommend .name-jp {
+  color: yellow;
+  text-shadow: 0 0 10px white;
+  font-size: 3rem;
+}
+#recommend .description {
+  font-size: 2rem;
+  color: black;
+  text-shadow: 0 0 5px #797979;
+}
+#recommend .price {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+}
+
 @font-face {
   font-family: "jiggler";
   font-style: normal;
@@ -10831,6 +10883,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .section-header {
+    font-size: 3rem;
+    box-shadow: 4px 4px 0 black;
+  }
+
   .nav .nav-trigger {
     display: block;
   }
@@ -10949,6 +11006,22 @@ body {
   .home {
     width: 100%;
     height: 30vh;
+  }
+
+  #recommend .name-en {
+    padding-top: 10px;
+    font-size: 3rem;
+    font-family: sans-serif;
+  }
+  #recommend .name-jp {
+    font-size: 2rem;
+  }
+  #recommend .price {
+    font-size: 2rem;
+    letter-spacing: 0px;
+  }
+  #recommend .description {
+    font-size: 1.6rem;
   }
 }
 
