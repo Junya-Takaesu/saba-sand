@@ -1,3 +1,4 @@
 @media screen and (max-width:$break-point-md) {
-  @import "nav.scss";
+  @import "nav";
+  @import "home";
 }
