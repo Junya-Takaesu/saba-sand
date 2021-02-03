@@ -10,7 +10,7 @@
   background: url(../assets/images/home-bg.svg) no-repeat center/cover;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:$break-point-md) {
   .home {
     width: 100%;
     height: 30vh;

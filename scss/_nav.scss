@@ -2,8 +2,6 @@
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 /* Navbar section */
 
-$header-text-color: #d7d7d7;
-
 @mixin logo-border($width: 178px, $height: 8px) {
   content: "";
   display: block;
@@ -21,7 +19,6 @@ $header-text-color: #d7d7d7;
   line-height: 65px;
   text-align: center;
   padding: 20px 0;
-  // -webkit-transition: all 0.4s ease; // remove latar
   transition: all 0.4s ease;
 
   div {
@@ -32,12 +29,12 @@ $header-text-color: #d7d7d7;
 
       a {
         text-decoration: none;
-        color: $header-text-color;
+        color: $text-white;
         font-size: 6rem;
         font-weight: bold;
 
         &:hover {
-          color: #e6e200;
+          color: $text-yellow-hover;
           text-shadow: 0 0 10px;
         }
 
@@ -56,13 +53,13 @@ $header-text-color: #d7d7d7;
         font-size: 13px;
       }
     }
-    &.main_list {
+    &.main-list {
       height: 65px;
       float: right;
       font-family: "jiggler", sans-serif;
       letter-spacing: 0.5rem;
 
-      ul {
+      .nav-links {
         width: 100%;
         height: 65px;
         display: flex;
@@ -78,12 +75,12 @@ $header-text-color: #d7d7d7;
 
           a {
             text-decoration: none;
-            color: $header-text-color;
+            color: $text-white;
             line-height: 65px;
             font-size: 2.4rem;
 
             &:hover {
-              color: #e6e200;
+              color: $text-yellow-hover;
               text-shadow: 0 0 10px;
             }
           }
@@ -93,22 +90,22 @@ $header-text-color: #d7d7d7;
   }
 
   /* Media qurey section */
-  .navTrigger {
+  .nav-trigger {
     display: none;
   }
 }
 
 .affix {
   padding: 5px 0 0;
-  background-color: #111;
+  background-color: $nav-background-color;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:$break-point-md) {
   $s-logo-border-length: 90px;
   $s-logo-border-heigth: 5px;
 
   .nav {
-    .navTrigger {
+    .nav-trigger {
       display: block;
     }
 
@@ -116,7 +113,7 @@ $header-text-color: #d7d7d7;
       &.logo {
         a {
           text-decoration: none;
-          color: $header-text-color;
+          color: $text-white;
           font-size: 3rem;
           font-weight: bold;
 
@@ -135,20 +132,19 @@ $header-text-color: #d7d7d7;
         }
       }
 
-      &.main_list {
+      &.main-list {
         width: 100%;
         height: 0;
         overflow: hidden;
 
-        ul {
+        .nav-links {
           flex-direction: column;
           width: 100%;
           height: 100vh;
           right: 0;
           left: 0;
           bottom: 0;
-          background-color: #111;
-          /*same background color of navbar*/
+          background-color: $nav-background-color;
           background-position: center top;
 
           li {
@@ -183,7 +179,7 @@ $header-text-color: #d7d7d7;
   /* Animation */
   /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
-  .navTrigger {
+  .nav-trigger {
     cursor: pointer;
     width: 30px;
     height: 25px;

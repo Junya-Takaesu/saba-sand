@@ -9,9 +9,9 @@
     }
   });
 
-  $('.navTrigger').click(function () {
+  $('.nav-trigger').click(function () {
     $(this).toggleClass('active');
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
+    $("#main-list-div").toggleClass("show_list");
+    $("#main-list-div").fadeIn();
   });
 })()
