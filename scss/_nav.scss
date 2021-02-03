@@ -23,7 +23,7 @@
         font-size: 6rem;
         font-weight: bold;
 
-        &:hover {
+        &.logo-hover {
           color: $text-yellow-hover;
           text-shadow: 0 0 10px;
         }
