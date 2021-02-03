@@ -39,37 +39,30 @@
           </div>
         </div>
         <div class="row neon"></div>
-        
-          
+        <% menu_list.each do |menu_item| %>
+          <% next unless menu_item[:special] %>
           <div class="row">
             <div class="col-12 col-md-7" id="sand-image"></div>
             <div class="col-12 col-md-5">
               <div class="container">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
-                    <h2 class="name-en">THE SABA SAND</h2>
-                    <p class="name-jp">サバサンド</p>
+                    <h2 class="name-en"><%= menu_item[:name_en] %></h2>
+                    <p class="name-jp"><%= menu_item[:name_jp] %></p>
                   </div>
                   <div class="col-12 col-md-6">
-                    <div class="price">￥555</div>
+                    <div class="price">￥<%= menu_item[:price] %></div>
                   </div>
                 </div>
                 <div class="row pt-md-5">
                   <div class="col">
-                    <p class="description">焼き立てほやほやのサバ、新鮮なトマトとレタスのサンドウィッチ。トルコ発祥のやみつきサンドです。</p>
+                    <p class="description"><%= menu_item[:description] %></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        
-          
-          
-          
-          
-          
-          
-          
+        <% end %>
         <div class="row neon"></div>
         <div class="row">
           <p class="notice text-end">※すべて税込み表示です</p>
@@ -83,111 +76,20 @@
         <h1 class="section-header text-center my-5">MENU</h1>
       </div>
       <div class="row row-cols-1 row-cols-md-4">
-      
+      <% menu_list.each do |menu_item| %>
         <div class="col">
           <div class="container">
             <div class="row sand-image"></div>
             <div class="row">
-              <h2 class="name-en">THE SABA SAND</h2>
-              <p class="name-jp">サバサンド</p>
+              <h2 class="name-en"><%= menu_item[:name_en] %></h2>
+              <p class="name-jp"><%= menu_item[:name_jp] %></p>
             </div>
             <div class="row mb-5">
-              <div class="price">￥555</div>
+              <div class="price">￥<%= menu_item[:price] %></div>
             </div>
           </div>
         </div>
-      
-        <div class="col">
-          <div class="container">
-            <div class="row sand-image"></div>
-            <div class="row">
-              <h2 class="name-en">THE EGG SAND</h2>
-              <p class="name-jp">タマゴ</p>
-            </div>
-            <div class="row mb-5">
-              <div class="price">￥666</div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="container">
-            <div class="row sand-image"></div>
-            <div class="row">
-              <h2 class="name-en">THE CHICKEN SAND</h2>
-              <p class="name-jp">チキンサンド</p>
-            </div>
-            <div class="row mb-5">
-              <div class="price">￥777</div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="container">
-            <div class="row sand-image"></div>
-            <div class="row">
-              <h2 class="name-en">THE VEGE SAND</h2>
-              <p class="name-jp">野菜サンド</p>
-            </div>
-            <div class="row mb-5">
-              <div class="price">￥888</div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="container">
-            <div class="row sand-image"></div>
-            <div class="row">
-              <h2 class="name-en">THE GOZILLA SAND</h2>
-              <p class="name-jp">ゴジラサンド</p>
-            </div>
-            <div class="row mb-5">
-              <div class="price">￥999</div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="container">
-            <div class="row sand-image"></div>
-            <div class="row">
-              <h2 class="name-en">THE TURKEY SAND</h2>
-              <p class="name-jp">ターキーサンド</p>
-            </div>
-            <div class="row mb-5">
-              <div class="price">￥1111</div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="container">
-            <div class="row sand-image"></div>
-            <div class="row">
-              <h2 class="name-en">THE HOT CHILL SAND</h2>
-              <p class="name-jp">ホットチリサンド</p>
-            </div>
-            <div class="row mb-5">
-              <div class="price">￥1222</div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="container">
-            <div class="row sand-image"></div>
-            <div class="row">
-              <h2 class="name-en">THE DEEP FRIED BEAF SAND</h2>
-              <p class="name-jp">メンチカツサンド</p>
-            </div>
-            <div class="row mb-5">
-              <div class="price">￥1333</div>
-            </div>
-          </div>
-        </div>
-      
+      <% end %>
       </div>
     </div>
   </section>
@@ -206,27 +108,12 @@
             <div class="row">
               <h1 class="sns-message text-center">Follow Us!<span>;)</span></h1>
             </div>
-            
+            <% campaigns.each do |campaign| %>
               <div class="row sns-card p-5 mb-5">
-                <h1 class="mb-4">ハッシュタグキャンペーン！</h1>
-                <p><span class="marker">#サバサンド</span>をつけて投稿していただいた皆様の中から、抽選で100名様に100万円プレゼント！</p>
+                <h1 class="mb-4"><%= campaign[:title] %></h1>
+                <p><%= campaign[:description] %></p>
               </div>
-            
-              <div class="row sns-card p-5 mb-5">
-                <h1 class="mb-4">ハッシュタグキャンペーン！</h1>
-                <p><span class="marker">#サバサンド</span>をつけて投稿していただいた皆様の中から、抽選で100名様に100万円プレゼント！</p>
-              </div>
-            
-              <div class="row sns-card p-5 mb-5">
-                <h1 class="mb-4">ハッシュタグキャンペーン！</h1>
-                <p><span class="marker">#サバサンド</span>をつけて投稿していただいた皆様の中から、抽選で100名様に100万円プレゼント！</p>
-              </div>
-            
-              <div class="row sns-card p-5 mb-5">
-                <h1 class="mb-4">ハッシュタグキャンペーン！</h1>
-                <p><span class="marker">#サバサンド</span>をつけて投稿していただいた皆様の中から、抽選で100名様に100万円プレゼント！</p>
-              </div>
-            
+            <% end %>
           </div>
         </div>
       </div>

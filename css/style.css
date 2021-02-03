@@ -10659,6 +10659,11 @@ body {
   box-shadow: 10px 10px 0 black;
 }
 
+.notice {
+  color: white;
+  font-size: 2vh;
+}
+
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 /* Navbar section */
