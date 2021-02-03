@@ -1,18 +1,14 @@
 // この import ですべての bootstrap の sass を取り込む
 @import "../bootstrap/scss/bootstrap";
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "mixin";
+@import "common";
 @import "nav";
 @import "home";
 @import "recommend";
-@import "fonts";
 @import "menu";
 @import "sns";
 @import "scroll-top";
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    font-size: 10px;
-}
+@import "./responsive/responsive";

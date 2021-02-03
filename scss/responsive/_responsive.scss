@@ -1,0 +1,7 @@
+@media screen and (max-width:$break-point-md) {
+  @import "common";
+  @import "nav";
+  @import "home";
+  @import "recommend";
+  @import "sns";
+}
