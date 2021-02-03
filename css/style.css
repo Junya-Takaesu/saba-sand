@@ -10679,7 +10679,7 @@ body {
 }
 .nav div.logo a {
   text-decoration: none;
-  color: #d7d7d7;
+  color: bisque;
   font-size: 6rem;
   font-weight: bold;
 }
@@ -10732,7 +10732,7 @@ body {
 }
 .nav div.main-list .nav-links li a {
   text-decoration: none;
-  color: #d7d7d7;
+  color: bisque;
   line-height: 65px;
   font-size: 2.4rem;
 }
@@ -10824,14 +10824,14 @@ body {
 #recommend #sand-image {
   height: 45vh;
   background: url(../assets/images/special-sand.svg) center/cover;
-  box-shadow: 0px 3px 10px #7e8605;
+  box-shadow: inset 0px 30px 30px rgba(134, 5, 5, 0.555);
 }
 #recommend .neon {
-  margin: 20px 0 20px -1000px;
+  margin: 10px 0 10px -1000px;
   width: 10000px;
   height: 3vh;
   background: linear-gradient(to bottom, rgba(247, 12, 12, 0.9), rgba(163, 4, 4, 0.87));
-  box-shadow: 0 0px 50px 10px rgba(194, 0, 0, 0.9);
+  box-shadow: 0 0px 50px 4px rgba(194, 0, 0, 0.9);
 }
 #recommend .name-en {
   color: yellow;
@@ -10853,6 +10853,28 @@ body {
   font-size: 4rem;
   font-weight: 900;
   letter-spacing: 1rem;
+}
+
+#menu {
+  background-color: #291715;
+  box-shadow: inset 0 0 100px 30px black;
+  color: bisque;
+}
+#menu .sand-image {
+  width: auto;
+  height: 25vh;
+  background: url(../assets/images/special-sand.svg) center/cover;
+  z-index: 0;
+}
+#menu .name-en {
+  color: yellow;
+  text-shadow: 0 0 10px white;
+}
+#menu .name-jp {
+  font-size: 2rem;
+}
+#menu .price {
+  font-size: 1.7rem;
 }
 
 .scroll-top {
@@ -10893,7 +10915,7 @@ body {
   }
   .nav div.logo a {
     text-decoration: none;
-    color: #d7d7d7;
+    color: bisque;
     font-size: 3rem;
     font-weight: bold;
   }
