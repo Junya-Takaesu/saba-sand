@@ -33,4 +33,23 @@
     })
   })();
 
+  (function() {
+    $logo_anchor = $('.logo a');
+    $('.logo').hover(
+      function() {
+        $logo_anchor.addClass('logo-hover');
+      },
+      function() {
+        $logo_anchor.removeClass('logo-hover');
+      }
+    );
+
+    setInterval(() => {
+      if($logo_anchor.hasClass("logo-hover")) {
+        $logo_anchor.removeClass('logo-hover');
+      } else {
+        $logo_anchor.addClass('logo-hover');
+      }
+    }, 2000);
+  })();
 })();

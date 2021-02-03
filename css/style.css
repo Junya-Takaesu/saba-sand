@@ -10688,7 +10688,7 @@ body {
   font-size: 6rem;
   font-weight: bold;
 }
-.nav div.logo a:hover {
+.nav div.logo a.logo-hover {
   color: #e6e200;
   text-shadow: 0 0 10px;
 }
