@@ -10628,6 +10628,24 @@ body {
   font-size: 10px;
 }
 
+@font-face {
+  font-family: "jiggler";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/budmo jiggler.ttf");
+}
+@font-face {
+  font-family: "jigglish";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/budmo jigglish.ttf");
+}
+@font-face {
+  font-family: "Ewert-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Ewert-Regular.ttf");
+}
 .section-header {
   width: fit-content;
   font-weight: 400;
@@ -10837,24 +10855,6 @@ body {
   letter-spacing: 1rem;
 }
 
-@font-face {
-  font-family: "jiggler";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/budmo jiggler.ttf");
-}
-@font-face {
-  font-family: "jigglish";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/budmo jigglish.ttf");
-}
-@font-face {
-  font-family: "Ewert-Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/Ewert-Regular.ttf");
-}
 .scroll-top {
   height: 60px;
   width: 60px;

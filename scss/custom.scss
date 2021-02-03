@@ -1,12 +1,12 @@
 // この import ですべての bootstrap の sass を取り込む
 @import "../bootstrap/scss/bootstrap";
 @import "reset";
+@import "fonts";
 @import "variables";
 @import "mixin";
 @import "common";
 @import "nav";
 @import "home";
 @import "recommend";
-@import "fonts";
 @import "scroll-top";
 @import "./responsive/responsive";
