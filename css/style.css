@@ -10628,30 +10628,25 @@ textarea.form-control-lg {
   position: fixed;
   line-height: 65px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  -webkit-transition: all 0.4s ease;
+  padding: 20px 0;
   transition: all 0.4s ease;
+  /* Media qurey section */
 }
-
 .nav div.logo {
   float: left;
   width: 100px;
   padding-left: 3rem;
 }
-
-.nav div.logo a:hover {
-  color: #e6e200;
-  text-shadow: 0 0 10px;
-}
-
 .nav div.logo a {
   text-decoration: none;
   color: #d7d7d7;
   font-size: 6rem;
   font-weight: bold;
 }
-
+.nav div.logo a:hover {
+  color: #e6e200;
+  text-shadow: 0 0 10px;
+}
 .nav div.logo a::before {
   content: "";
   display: block;
@@ -10662,7 +10657,6 @@ textarea.form-control-lg {
   border-radius: 10px;
   margin-bottom: -23%;
 }
-
 .nav div.logo a::after {
   content: "";
   display: block;
@@ -10673,18 +10667,15 @@ textarea.form-control-lg {
   border-radius: 10px;
   margin-top: -41%;
 }
-
-#logo-dot {
+.nav div.logo #dot {
   font-size: 13px;
 }
-
 .nav div.main_list {
   height: 65px;
   float: right;
   font-family: "jiggler", sans-serif;
   letter-spacing: 0.5rem;
 }
-
 .nav div.main_list ul {
   width: 100%;
   height: 65px;
@@ -10693,48 +10684,41 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
 }
-
 .nav div.main_list ul li {
   width: auto;
   height: 65px;
   padding: 0;
   padding-right: 3rem;
 }
-
 .nav div.main_list ul li a {
   text-decoration: none;
   color: #d7d7d7;
   line-height: 65px;
   font-size: 2.4rem;
 }
-
 .nav div.main_list ul li a:hover {
   color: #e6e200;
   text-shadow: 0 0 10px;
 }
-
-/* Media qurey section */
-.navTrigger {
+.nav .navTrigger {
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    margin: 0;
-  }
+.affix {
+  padding: 5px 0 0;
+  background-color: #111;
 }
+
 @media screen and (max-width: 768px) {
-  .navTrigger {
+  .nav .navTrigger {
     display: block;
   }
-
   .nav div.logo a {
     text-decoration: none;
     color: #d7d7d7;
     font-size: 3rem;
     font-weight: bold;
   }
-
   .nav div.logo a::before {
     content: "";
     display: block;
@@ -10745,7 +10729,6 @@ textarea.form-control-lg {
     border-radius: 10px;
     margin-bottom: -33%;
   }
-
   .nav div.logo a::after {
     content: "";
     display: block;
@@ -10756,22 +10739,14 @@ textarea.form-control-lg {
     border-radius: 10px;
     margin-top: -44%;
   }
-
-  #logo-dot {
-    font-size: 10px;
+  .nav div.logo #dot {
+    font-size: 8px;
   }
-
   .nav div.main_list {
     width: 100%;
     height: 0;
     overflow: hidden;
   }
-
-  .nav div.show_list {
-    height: auto;
-    display: none;
-  }
-
   .nav div.main_list ul {
     flex-direction: column;
     width: 100%;
@@ -10783,91 +10758,72 @@ textarea.form-control-lg {
     /*same background color of navbar*/
     background-position: center top;
   }
-
   .nav div.main_list ul li {
     width: 100%;
     text-align: right;
   }
-
   .nav div.main_list ul li a {
     text-align: center;
     width: 100%;
     font-size: 3rem;
     padding: 20px;
   }
-
+  .nav div.show_list {
+    height: auto;
+    display: none;
+  }
   .nav div.media_button {
     display: block;
   }
-}
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-.navTrigger {
-  cursor: pointer;
-  width: 30px;
-  height: 25px;
-  margin: auto;
-  position: absolute;
-  right: 30px;
-  top: 0;
-  bottom: 0;
-}
 
-.navTrigger i {
-  background-color: #fff;
-  border-radius: 2px;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-}
-
-.navTrigger i:nth-child(1) {
-  -webkit-animation: outT 0.8s backwards;
-  animation: outT 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(2) {
-  margin: 5px 0;
-  -webkit-animation: outM 0.8s backwards;
-  animation: outM 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-  -webkit-animation: outBtm 0.8s backwards;
-  animation: outBtm 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-
-.navTrigger.active i:nth-child(1) {
-  -webkit-animation: inT 0.8s forwards;
-  animation: inT 0.8s forwards;
-  box-shadow: 0 0 10px white;
-}
-
-.navTrigger.active i:nth-child(2) {
-  -webkit-animation: inM 0.8s forwards;
-  animation: inM 0.8s forwards;
-  box-shadow: 0 0 10px white;
-}
-
-.navTrigger.active i:nth-child(3) {
-  -webkit-animation: inBtm 0.8s forwards;
-  animation: inBtm 0.8s forwards;
-  box-shadow: 0 0 10px white;
-}
-
-@-webkit-keyframes inM {
-  50% {
-    -webkit-transform: rotate(0deg);
+  .affix {
+    padding: 18px 0 0;
   }
-  100% {
-    -webkit-transform: rotate(45deg);
+
+  /* Animation */
+  /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+  .navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+  }
+  .navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+  }
+  .navTrigger i:nth-child(1) {
+    animation: outT 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    animation: outM 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .navTrigger i:nth-child(3) {
+    animation: outBtm 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .navTrigger.active i:nth-child(1) {
+    animation: inT 0.8s forwards;
+    box-shadow: 0 0 10px white;
+  }
+  .navTrigger.active i:nth-child(2) {
+    animation: inM 0.8s forwards;
+    box-shadow: 0 0 10px white;
+  }
+  .navTrigger.active i:nth-child(3) {
+    animation: inBtm 0.8s forwards;
+    box-shadow: 0 0 10px white;
   }
 }
 @keyframes inM {
@@ -10878,31 +10834,12 @@ textarea.form-control-lg {
     transform: rotate(45deg);
   }
 }
-@-webkit-keyframes outM {
-  50% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(45deg);
-  }
-}
 @keyframes outM {
   50% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(45deg);
-  }
-}
-@-webkit-keyframes inT {
-  0% {
-    -webkit-transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    -webkit-transform: translateY(9px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translateY(9px) rotate(135deg);
   }
 }
 @keyframes inT {
@@ -10916,17 +10853,6 @@ textarea.form-control-lg {
     transform: translateY(9px) rotate(135deg);
   }
 }
-@-webkit-keyframes outT {
-  0% {
-    -webkit-transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    -webkit-transform: translateY(9px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translateY(9px) rotate(135deg);
-  }
-}
 @keyframes outT {
   0% {
     transform: translateY(0px) rotate(0deg);
@@ -10936,17 +10862,6 @@ textarea.form-control-lg {
   }
   100% {
     transform: translateY(9px) rotate(135deg);
-  }
-}
-@-webkit-keyframes inBtm {
-  0% {
-    -webkit-transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    -webkit-transform: translateY(-9px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translateY(-9px) rotate(135deg);
   }
 }
 @keyframes inBtm {
@@ -10960,17 +10875,6 @@ textarea.form-control-lg {
     transform: translateY(-9px) rotate(135deg);
   }
 }
-@-webkit-keyframes outBtm {
-  0% {
-    -webkit-transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    -webkit-transform: translateY(-9px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translateY(-9px) rotate(135deg);
-  }
-}
 @keyframes outBtm {
   0% {
     transform: translateY(0px) rotate(0deg);
@@ -10980,33 +10884,6 @@ textarea.form-control-lg {
   }
   100% {
     transform: translateY(-9px) rotate(135deg);
-  }
-}
-.affix {
-  padding: 5px 0 0;
-  background-color: #111;
-}
-
-@media screen and (max-width: 768px) {
-  .affix {
-    padding: 18px 0 0;
-  }
-}
-.myH2 {
-  text-align: center;
-  font-size: 4rem;
-}
-
-.myP {
-  text-align: justify;
-  padding-left: 15%;
-  padding-right: 15%;
-  font-size: 20px;
-}
-
-@media all and (max-width: 700px) {
-  .myP {
-    padding: 2%;
   }
 }
 /* Home section */
@@ -11028,91 +10905,6 @@ textarea.form-control-lg {
     background: url(../assets/images/home-bg.svg) no-repeat cover;
   }
 }
-.recommend {
-  width: 100%;
-  height: 70vh;
-  background-color: #F7CE25;
-  box-shadow: inset 0 0 100px 30px #464509;
-}
-
-#special-sand-image {
-  height: 45vh;
-  background: url("../assets/images/special-sand.svg") center/cover;
-}
-
-.recommend-header {
-  width: fit-content;
-  margin: 0 auto;
-  background-color: #504b4b;
-  box-shadow: 10px 10px 0 black;
-  font-weight: 400;
-  color: #F7CE25;
-  font-size: 10rem;
-  font-family: Ewert-Regular;
-  letter-spacing: 1rem;
-  padding: 0 50px;
-}
-
-@media screen and (max-width: 768px) {
-  .recommend-header {
-    width: 23rem;
-    font-size: 3rem;
-    padding: 0 1.2rem;
-    margin: 0 auto;
-    box-shadow: 5px 5px 0 black;
-  }
-}
-.recommend-name-en {
-  font-size: 4.5rem;
-  font-family: jigglish;
-}
-
-.recommend-name-jp {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.price {
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: 1rem;
-}
-
-.description {
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-}
-
-/* sp mode */
-.recommend-sp {
-  width: 100%;
-  height: 70vh;
-  background-color: #F7CE25;
-  box-shadow: inset 0 0 100px 30px #464509;
-  height: 90vh;
-}
-.recommend-sp .recommend-name-en {
-  font-size: 3rem;
-  font-family: sans-serif;
-  font-weight: 600;
-  letter-spacing: -4px;
-}
-.recommend-sp .recommend-name-jp {
-  font-size: 2rem;
-}
-.recommend-sp .price {
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
-.recommend-sp .description {
-  font-size: 1.5rem;
-}
-
-#special-sand-image-sp {
-  background: url("../assets/images/special-sand.svg") center/cover;
-  height: 35vh;
-}
-
 @font-face {
   font-family: "jiggler";
   font-style: normal;
@@ -11131,103 +10923,6 @@ textarea.form-control-lg {
   font-weight: normal;
   src: url("../assets/fonts/Ewert-Regular.ttf");
 }
-.menu {
-  background-color: #291715;
-  box-shadow: inset 0 0 100px 30px black;
-  color: bisque;
-}
-.menu .menu-header {
-  width: 500px;
-  font-weight: 400;
-  color: bisque;
-  background-color: #504b4b;
-  font-size: 10rem;
-  font-family: Ewert-Regular;
-  letter-spacing: 1rem;
-  padding: 0 50px;
-  margin: 0 auto;
-  box-shadow: 10px 10px 0 black;
-}
-@media screen and (max-width: 768px) {
-  .menu .menu-header {
-    width: 15rem;
-    font-size: 3rem;
-    padding: 0 1.2rem;
-    box-shadow: 5px 5px 0 black;
-  }
-}
-.menu .sand-image {
-  width: auto;
-  height: 25vh;
-  background: url("../assets/images/special-sand.svg") center/cover;
-  z-index: 0;
-}
-.menu .menu-name-en {
-  font-size: 3rem;
-  font-weight: bold;
-  text-shadow: 5px 5px 1px black;
-}
-.menu .menu-name-jp {
-  font-size: 1.5rem;
-}
-.menu .price {
-  font-size: 1.5rem;
-  letter-spacing: 0.3rem;
-}
-
-#sns {
-  background-color: black;
-}
-#sns .sns-header {
-  width: 500px;
-  font-weight: 400;
-  color: bisque;
-  background-color: #504b4b;
-  font-size: 10rem;
-  font-family: Ewert-Regular;
-  letter-spacing: 1rem;
-  padding: 0 50px;
-  margin: 0 auto;
-  box-shadow: 10px 10px 0 black;
-}
-#sns .sns-message {
-  font-size: 6rem;
-  color: bisque;
-  text-shadow: 5px 5px 1px #504b4b;
-}
-#sns .sns-body {
-  background: blanchedalmond;
-  border-radius: 10px;
-}
-#sns .sns-body h1, #sns .sns-body .h1 {
-  font-size: 4rem;
-}
-#sns .sns-body p {
-  font-size: 2rem;
-}
-#sns .sns-body .marker {
-  background-color: black;
-  padding: 2px;
-  margin: 0 2px;
-  border-radius: 10px;
-  color: bisque;
-  box-shadow: 3px 3px 1px #504b4b;
-}
-@media screen and (max-width: 768px) {
-  #sns .sns-header {
-    width: 15rem;
-    font-size: 3rem;
-    padding: 0 1.2rem;
-    box-shadow: 5px 5px 0 black;
-  }
-  #sns .sns-body h1, #sns .sns-body .h1 {
-    font-size: 2.5rem;
-  }
-  #sns .sns-body p {
-    font-size: 1.7rem;
-  }
-}
-
 .scroll-top {
   height: 60px;
   width: 60px;
